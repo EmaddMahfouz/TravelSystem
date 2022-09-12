@@ -20,7 +20,7 @@ public:
         menu();
     }
     ~ManageMenu() {}
-};
+}; // end of class
 
 class Customers
 {
@@ -65,7 +65,7 @@ public:
             in.close();
         }
     }
-};
+}; // end of class
 
 int Customers::CustomerID;
 
@@ -164,7 +164,7 @@ public:
             menu();
         }
     }
-};
+}; // end of class
 
 float Cars::lasttaxiCost;
 
@@ -337,7 +337,7 @@ public:
             menu();
         }
     }
-};
+}; // end of class
 
 float Booking::hotelCost;
 
@@ -383,7 +383,7 @@ public:
         }
         inf.close();
     }
-};
+}; // end of class
 
 void menu()
 {
