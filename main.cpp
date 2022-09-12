@@ -178,7 +178,7 @@ public:
 
     void hotels()
     {
-        string hotelNo[] = {"Avendra", "ChoiceYou", "ElephantBay"};
+        string hotelNo[] = {"Kempinski", "ChoiceYou", "ElephantBay"};
         for(int a = 0; a < 3; a++)
         {
             cout << (a+1) <<". Hotel " << hotelNo[a] << endl;
@@ -192,7 +192,7 @@ public:
 
         if(hotelChoice == 1)
         {
-            cout << "-------WELCOME TO HOTEL AVENDRA-------\n" << endl;
+            cout << "-------WELCOME TO HOTEL KEMPINSKI-------\n" << endl;
             cout << "The Garden, food and beverage. Enjoy all you can drink, Stay cool and get chilled in the summer sun." << endl;
             cout << "Packages offered by Avendra:\n" << endl;
             cout << "1. Standard Pack" << endl;
@@ -207,19 +207,19 @@ public:
             if (packChoice1 == 1)
             {
                 hotelCost = 5000.00;
-                cout << "\nYou have successfully booked Standard Pack at Avendra" << endl;
+                cout << "\nYou have successfully booked Standard Pack at Kempinski" << endl;
                 cout << "Goto Menu and take the receipt" << endl;
             }
             else if (packChoice1 == 2)
             {
                 hotelCost = 10000.00;
-                cout << "\nYou have successfully booked Premium Pack at Avendra" << endl;
+                cout << "\nYou have successfully booked Premium Pack at Kempinski" << endl;
                 cout << "Goto Menu and take the receipt" << endl;
             }
             else if (packChoice1 == 3)
             {
                 hotelCost = 15000.00;
-                cout << "\nYou have successfully booked Luxury Pack at Avendra" << endl;
+                cout << "\nYou have successfully booked Luxury Pack at Kempinski" << endl;
                 cout << "Goto Menu to take the receipt" << endl;
             }
             else
@@ -244,11 +244,11 @@ public:
         }
         else if(hotelChoice == 2)
         {
-            cout << "-------WELCOME TO HOTEL CHOICEYOU-------\n" << endl;
+            cout << "-------WELCOME TO HOTEL SONESTA-------\n" << endl;
 
             cout << "Swimming Pool | Free WiFi | Family Rooms \n Fitness Center | Restaurant & Bar" << endl;
 
-            cout << "Packages Offered by ChoiceYou:\n" << endl;
+            cout << "Packages Offered by Sonesta:\n" << endl;
 
             cout << "1. Family Pack" << endl;
             cout << "\t Rs.15000.00 for a day" << endl;
@@ -263,19 +263,19 @@ public:
             if (packChoice1 == 1)
             {
                 hotelCost = 15000.00;
-                cout << "You have successfully booked Family Pack at ChoiceYou" << endl;
+                cout << "You have successfully booked Family Pack at Sonesta" << endl;
                 cout << "Goto Menu and take the receipt" << endl;
             }
             else if (packChoice1 == 2)
             {
                 hotelCost = 10000.00;
-                cout << "You have successfully booked Couple Pack at ChoiceYou" << endl;
+                cout << "You have successfully booked Couple Pack at Sonesta" << endl;
                 cout << "Goto Menu and take the receipt" << endl;
             }
             else if (packChoice1 == 3)
             {
                 hotelCost = 5000.00;
-                cout << "You have successfully booked Single Pack at ChoiceYou" << endl;
+                cout << "You have successfully booked Single Pack at Sonesta" << endl;
                 cout << "Goto Menu and take the receipt" << endl;
             }
             else
@@ -299,7 +299,7 @@ public:
         }
         else if(hotelChoice == 3)
         {
-            cout << "-------WELCOME TO HOTEL ELEPHANTBAY-------\n" << endl;
+            cout << "-------WELCOME TO HOTEL Al-MASA-------\n" << endl;
             cout << "Set in tropical gardens on the banks of the Maha Oya river While Seeing Elephants" << endl;
             cout << "Amazing offer in this summer: Rs.5000.00 for a one day!!!" << endl;
 
@@ -309,7 +309,7 @@ public:
             if (packChoice1 == 1)
             {
                 hotelCost = 5000.00;
-                cout << "You have successfully booked ElephantBay Special Pack" << endl;
+                cout << "You have successfully booked Al Masa Special Pack" << endl;
                 cout << "Goto Menu and take the receipt" << endl;
             }
             else
@@ -350,14 +350,14 @@ public:
     {
         ofstream outf("receipt.txt"); //receipt for bought items
         {
-            outf << "--------ABC Travel Agency--------" << endl;
+            outf << "-------- Trap Trip---------------" << endl;
             outf << "-------------Receipt-------------" << endl;
             outf << "_________________________________" << endl;
 
             outf << "Customers ID: " << Customers::CustomerID << endl << endl;
             outf << "Description\t\t Total" << endl;
             outf << "Hotel cost:\t\t " << fixed << setprecision(2) << Booking::hotelCost << endl;
-            outf << "Travel (cab) cost:\t " << fixed << setprecision(2) << Cars::lasttaxiCost << endl;
+            outf << "Travel (Car) cost:\t " << fixed << setprecision(2) << Cars::lasttaxiCost << endl;
 
             outf << "_________________________________" << endl;
             outf << "Total Charge:\t\t " << fixed << setprecision(2) << Booking::hotelCost+Cars::lasttaxiCost << endl;
