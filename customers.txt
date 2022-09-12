@@ -1,0 +1,15 @@
+
+
+Customer ID: 1
+Name: Emad
+Age: 0
+Mobile Number: 32764
+Address: 
+Gender: 
+
+Customer ID: 7
+Name: Ahmed
+Age: 23
+Mobile Number: 123456789
+Address: asd
+Gender: male
