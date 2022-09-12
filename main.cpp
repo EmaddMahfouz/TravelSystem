@@ -178,7 +178,7 @@ public:
 
     void hotels()
     {
-        string hotelNo[] = {"Kempinski", "ChoiceYou", "ElephantBay"};
+        string hotelNo[] = {"Kempinski", "SONESTA", "ElephantBay"};
         for(int a = 0; a < 3; a++)
         {
             cout << (a+1) <<". Hotel " << hotelNo[a] << endl;
@@ -196,11 +196,11 @@ public:
             cout << "The Garden, food and beverage. Enjoy all you can drink, Stay cool and get chilled in the summer sun." << endl;
             cout << "Packages offered by Avendra:\n" << endl;
             cout << "1. Standard Pack" << endl;
-            cout << "\tAll basic facilities you need just for: Rs.5000.00" << endl;
+            cout << "\tAll basic facilities you need just for: EGP.5000.00" << endl;
             cout << "2. Premium Pack" << endl;
-            cout << "\tEnjoy Premium: Rs.10000.00" << endl;
+            cout << "\tEnjoy Premium: EGP.10000.00" << endl;
             cout << "3. Luxury Pack" << endl;
-            cout << "\tLive a Luxury at Avendra: Rs.15000.00" << endl;
+            cout << "\tLive a Luxury at Avendra: EGP.15000.00" << endl;
             cout << "\nPress another key to back or\nEnter Package number you want to book: ";
             cin >> packChoice1;
 
@@ -251,9 +251,9 @@ public:
             cout << "Packages Offered by Sonesta:\n" << endl;
 
             cout << "1. Family Pack" << endl;
-            cout << "\t Rs.15000.00 for a day" << endl;
+            cout << "\t EGP.15000.00 for a day" << endl;
             cout << "2. Couple Pack" << endl;
-            cout << "\t Rs.10000.00 for a day" << endl;
+            cout << "\t EGP.10000.00 for a day" << endl;
             cout << "3. Single Pack" << endl;
             cout << "\t 5000.00 for a day" << endl;
 
@@ -301,7 +301,7 @@ public:
         {
             cout << "-------WELCOME TO HOTEL Al-MASA-------\n" << endl;
             cout << "Set in tropical gardens on the banks of the Maha Oya river While Seeing Elephants" << endl;
-            cout << "Amazing offer in this summer: Rs.5000.00 for a one day!!!" << endl;
+            cout << "Amazing offer in this summer: EGP.5000.00 for a one day!!!" << endl;
 
             cout << "\nPress another key to back or\nPress 1 to book this special package: ";
             cin >> packChoice1;
@@ -391,7 +391,7 @@ void menu()
     int mainChoice;
     int inChoice;
     int gotoMenu;
-    cout << "\t\t      * ABC Travels *\n" << endl;
+    cout << "\t\t      * Trap Trip *\n" << endl;
     cout << "-------------------------Main Menu--------------------------" << endl;
     cout << "\t _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ " << endl;
     cout << "\t|\t\t\t\t\t|" << endl;
